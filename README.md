@@ -1,4 +1,82 @@
-# Real-time Chat Application Programming Exercise
+# Exercise-1 Design Patterns in Java
+
+This project demonstrates the implementation of six different design patterns, categorized into behavioral, creational, and structural patterns. Each design pattern is implemented in a structured and modular manner, following best practices like input validation, logging, and exception handling.
+
+## Project Structure
+/DesignPatternsProject
+   ├── behavioral/
+   │      ├── ObserverPattern.java
+   │      ├── StrategyPattern.java
+   ├── creational/
+   │      ├── SingletonPattern.java
+   │      ├── FactoryPattern.java
+   ├── structural/
+   │      ├── AdapterPattern.java
+   │      ├── DecoratorPattern.java
+   ├── Main.java
+   ├── logger/
+   │      ├── Logger.java
+   ├── utils/
+   │      ├── InputValidator.java
+
+
+## Design Patterns Implemented
+
+### Behavioral Patterns:
+- **Observer Pattern**: Implements the observer-subject relationship, where changes in the subject are communicated to observers.
+- **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.
+
+### Creational Patterns:
+- **Singleton Pattern**: Ensures a class has only one instance and provides a global point of access to it.
+- **Factory Pattern**: Provides an interface for creating objects, allowing subclasses to alter the type of objects that will be created.
+
+### Structural Patterns:
+- **Adapter Pattern**: Converts the interface of a class into another interface that clients expect.
+- **Decorator Pattern**: Attaches additional responsibilities to an object dynamically, offering an alternative to subclassing.
+
+## Logging
+
+A simple logging mechanism is implemented to log all events during the execution of the program. The logs are written to `app.log` file in the project directory.
+
+## Exception Handling
+
+The code includes exception handling where necessary, ensuring the application continues to function even in case of errors. All exceptions are logged into `app.log`.
+
+## Features
+
+- **Separation of Concerns**: Each design pattern is implemented in its own class, making the code modular and maintainable.
+- **Input Validation**: Ensures that all user inputs are validated before being processed.
+- **Extensible**: Easy to add more patterns or extend existing ones due to the clean and modular structure.
+
+## How Each Pattern is Demonstrated
+
+### Observer Pattern
+- **Location**: `behavioral/ObserverPattern.java`
+- **Explanation**: In this example, Subject maintains a list of Observers. When the subject changes, all registered observers are notified.
+
+### Strategy Pattern
+- **Location**: `behavioral/StrategyPattern.java`
+- **Explanation**: Two payment methods (Credit Card and PayPal) are defined as strategies. The ShoppingCart class allows switching between payment methods dynamically at runtime.
+
+### Singleton Pattern
+- **Location**: `creational/SingletonPattern.java`
+- **Explanation**: The Singleton class ensures that only one instance is created and is globally accessible.
+
+### Factory Pattern
+- **Location**: `creational/FactoryPattern.java`
+- **Explanation**: The ShapeFactory class provides an interface to create different shapes like Circle and Square.
+
+### Adapter Pattern
+- **Location**: `structural/AdapterPattern.java`
+- **Explanation**: This pattern allows MediaPlayer to play different file formats, using an adapter to bridge the gap between incompatible interfaces.
+
+### Decorator Pattern
+- **Location**: `structural/DecoratorPattern.java`
+- **Explanation**: Car is decorated with additional features dynamically by wrapping it in decorator classes like SportsCar.
+
+
+
+# Exercise-2 Real-time Chat Application Programming 
 
 ## Introduction
 
